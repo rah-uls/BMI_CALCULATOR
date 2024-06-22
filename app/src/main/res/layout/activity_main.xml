@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/design"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/login"/>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/userrrr"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lne"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_marginTop="130dp">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="5dp"
+                android:hint=" NAME-"
+                android:inputType="text"
+                android:background="@drawable/lne"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint=" EMAIL ID-"
+                android:padding="5dp"
+                android:inputType="text"
+                android:background="@drawable/lne"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:id="@+id/otp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint=" OTP-"
+                android:padding="5dp"
+                android:inputType="text"
+                android:background="@drawable/lne"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:id="@+id/dop"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="5dp"
+                android:hint=" DATE OF BIRTH-"
+                android:inputType="date"
+                android:background="@drawable/lne"
+                android:layout_margin="10dp"/>
+            <CheckBox
+                android:id="@+id/check"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="I AGREE FOR ALL PERMISSION."
+                android:textSize="10sp"/>
+
+            <Button
+                android:id="@+id/next"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:text="NEXT"
+                android:textSize="10sp"
+                android:background="@drawable/modern"
+                android:layout_height="40dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="10dp"
+                    app:cardBackgroundColor="@android:color/transparent">
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/email"/>
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_marginLeft="130dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="43dp"
+                        android:background="@drawable/calling"/>
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_marginLeft="210dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/facebook"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:background="@drawable/android"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
